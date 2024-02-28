@@ -1,0 +1,859 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A68E0B13-DD74-4D2B-A27A-15B6701F8D16}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SystemSales.My.MyApplication</StartupObject>
+    <RootNamespace>SystemSales</RootNamespace>
+    <AssemblyName>SystemSales</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SystemSales.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SystemSales.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v23.2, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Charts.v23.2.Core, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.CodeParser.v23.2, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.Desktop.v23.2, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v23.2, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v23.2, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Drawing.v23.2, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Images.v23.2, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v23.2.Core, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v23.2.Core, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v23.2.Drawing, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.PivotGrid.v23.2.Core, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v23.2.Core, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v23.2.Core, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v23.2.Export, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v23.2.Core, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.TreeMap.v23.2.Core, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v23.2, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v23.2.UI, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v23.2, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v23.2, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v23.2, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v23.2.UI, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v23.2.Wizard, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v23.2, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v23.2.Core, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v23.2, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v23.2, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v23.2, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v23.2, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v23.2, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v23.2.Extensions, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v23.2, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeMap.v23.2, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeMap.v23.2.UI, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="TouchlessLib">
+      <HintPath>F:\مشروع التخرج التانى\Sales Managment System\Sales Managment System\bin\Debug\TouchlessLib.dll</HintPath>
+    </Reference>
+    <Reference Include="XanderUI">
+      <HintPath>..\..\..\XanderUI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cleas\DB.vb" />
+    <Compile Include="cleas\log.vb" />
+    <Compile Include="cleas\Messages.vb" />
+    <Compile Include="cleas\Main_Mod.vb" />
+    <Compile Include="cleas\Module1.vb" />
+    <Compile Include="cleas\NumericToLiteral.vb" />
+    <Compile Include="DS\dsProcurement.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsProcurement.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS\dsRuternrptProcurement.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsRuternrptProcurement.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS\dsRuternSales.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsRuternSales.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS\dsWorkOrder.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsWorkOrder.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frm\frmEmp\frm_Customer.Designer.vb">
+      <DependentUpon>frm_Customer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm\frmEmp\frm_Customer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\frmEmp\frm_Employee.Designer.vb">
+      <DependentUpon>frm_Employee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm\frmEmp\frm_Employee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\frmEmp\frm_item.Designer.vb">
+      <DependentUpon>frm_item.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm\frmEmp\frm_item.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\frmEmp\frmPresence.Designer.vb">
+      <DependentUpon>frmPresence.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm\frmEmp\frmPresence.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\kah\Frm_PriceList.Designer.vb">
+      <DependentUpon>Frm_PriceList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm\kah\Frm_PriceList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\frmRequestPassword.Designer.vb">
+      <DependentUpon>frmRequestPassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm\frmRequestPassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\kah\txt_Balance.Designer.vb">
+      <DependentUpon>txt_Balance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm\kah\txt_Balance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_report\frmRptRuternSales.Designer.vb">
+      <DependentUpon>frmRptRuternSales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_report\frmRptRuternSales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_report\Frm_Purchases_All.Designer.vb">
+      <DependentUpon>Frm_Purchases_All.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_report\Frm_Purchases_All.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_report\frm_report_Procurement.Designer.vb">
+      <DependentUpon>frm_report_Procurement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_report\frm_report_Procurement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_report\rptRPT_Purchase_Returns.Designer.vb">
+      <DependentUpon>rptRPT_Purchase_Returns.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_report\rptRPT_Purchase_Returns.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Application2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Application3.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Application4.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="Order\frm_ReturnedPurchase.Designer.vb">
+      <DependentUpon>frm_ReturnedPurchase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Order\frm_ReturnedPurchase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Order\frm_Purchase.Designer.vb">
+      <DependentUpon>frm_Purchase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Order\frm_Purchase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\frm_main\frmBackUp.Designer.vb">
+      <DependentUpon>frmBackUp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm\frm_main\frmBackUp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_report\rpt_WorkOrder.Designer.vb">
+      <DependentUpon>rpt_WorkOrder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_report\rpt_WorkOrder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\frmEmp\frm_Supplir.Designer.vb">
+      <DependentUpon>frm_Supplir.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm\frmEmp\frm_Supplir.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\frm_main\frmSettings.Designer.vb">
+      <DependentUpon>frmSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm\frm_main\frmSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\frm_main\FrmTameLinx.Designer.vb">
+      <DependentUpon>FrmTameLinx.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm\frm_main\FrmTameLinx.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\frm_main\Frm_Camera.Designer.vb">
+      <DependentUpon>Frm_Camera.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm\frm_main\Frm_Camera.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="test\frmSales.Designer.vb">
+      <DependentUpon>frmSales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="test\frmSales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="test\frm_imge.Designer.vb">
+      <DependentUpon>frm_imge.vb</DependentUpon>
+    </Compile>
+    <Compile Include="test\frm_imge.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\frm_main\frm_Main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\frm_main\frm_Main.Designer.vb">
+      <DependentUpon>frm_Main.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\frm_main\Loading.Designer.vb">
+      <DependentUpon>Loading.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm\frm_main\Loading.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Application1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Order\frm_ReturnedSales.Designer.vb">
+      <DependentUpon>frm_ReturnedSales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Order\frm_ReturnedSales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\MonthlyProfits\frm_frm_Monthly_Profits.Designer.vb">
+      <DependentUpon>frm_frm_Monthly_Profits.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm\MonthlyProfits\frm_frm_Monthly_Profits.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\MonthlyProfits\frm_Monthly_Returns_Sales.Designer.vb">
+      <DependentUpon>frm_Monthly_Returns_Sales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm\MonthlyProfits\frm_Monthly_Returns_Sales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\MonthlyProfits\frm_Returns_Purchase.Designer.vb">
+      <DependentUpon>frm_Returns_Purchase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm\MonthlyProfits\frm_Returns_Purchase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\MonthlyProfits\frm_Sales_Returns.Designer.vb">
+      <DependentUpon>frm_Sales_Returns.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm\MonthlyProfits\frm_Sales_Returns.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\MonthlyProfits\MonthlySalesProfit.Designer.vb">
+      <DependentUpon>MonthlySalesProfit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm\MonthlyProfits\MonthlySalesProfit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\kah\Expanses.Designer.vb">
+      <DependentUpon>Expanses.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm\kah\Expanses.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\kah\frmExpiration.Designer.vb">
+      <DependentUpon>frmExpiration.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm\kah\frmExpiration.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\frm_main\frm_Welcom.Designer.vb">
+      <DependentUpon>frm_Welcom.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm\frm_main\frm_Welcom.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Order\frm_Sales.Designer.vb">
+      <DependentUpon>frm_Sales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Order\frm_Sales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\frm_main\frm_Logen.Designer.vb">
+      <DependentUpon>frm_Logen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm\frm_main\frm_Logen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_report\report_WorkOrder.Designer.vb">
+      <DependentUpon>report_WorkOrder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_report\report_WorkOrder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\frm_main\frmFullData.Designer.vb">
+      <DependentUpon>frmFullData.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm\frm_main\frmFullData.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\MonthlyProfits\frm_MonthlyProfit.Designer.vb">
+      <DependentUpon>frm_MonthlyProfit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm\MonthlyProfits\frm_MonthlyProfit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_report\frm_BillingSection.Designer.vb">
+      <DependentUpon>frm_BillingSection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_report\frm_BillingSection.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\MonthlyProfits\frmProfits.Designer.vb">
+      <DependentUpon>frmProfits.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm\MonthlyProfits\frmProfits.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="test\XtraForm6.Designer.vb">
+      <DependentUpon>XtraForm6.vb</DependentUpon>
+    </Compile>
+    <Compile Include="test\XtraForm6.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\frm_main\frm_AddUser.Designer.vb">
+      <DependentUpon>frm_AddUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm\frm_main\frm_AddUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frm\frmEmp\frm_Customer.resx">
+      <DependentUpon>frm_Customer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\frmEmp\frm_Employee.resx">
+      <DependentUpon>frm_Employee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\frmEmp\frm_item.resx">
+      <DependentUpon>frm_item.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\frmEmp\frmPresence.resx">
+      <DependentUpon>frmPresence.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\kah\Frm_PriceList.resx">
+      <DependentUpon>Frm_PriceList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\frmRequestPassword.resx">
+      <DependentUpon>frmRequestPassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\kah\txt_Balance.resx">
+      <DependentUpon>txt_Balance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_report\frmRptRuternSales.resx">
+      <DependentUpon>frmRptRuternSales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_report\Frm_Purchases_All.resx">
+      <DependentUpon>Frm_Purchases_All.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_report\frm_report_Procurement.resx">
+      <DependentUpon>frm_report_Procurement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_report\rptRPT_Purchase_Returns.resx">
+      <DependentUpon>rptRPT_Purchase_Returns.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order\frm_ReturnedPurchase.resx">
+      <DependentUpon>frm_ReturnedPurchase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order\frm_Purchase.resx">
+      <DependentUpon>frm_Purchase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="report\rpt_ReturnedSales.rdlc" />
+    <EmbeddedResource Include="report\rpWorkOrder.rdlc" />
+    <EmbeddedResource Include="frm\frm_main\frmBackUp.resx">
+      <DependentUpon>frmBackUp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_report\rpt_WorkOrder.resx">
+      <DependentUpon>rpt_WorkOrder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\frmEmp\frm_Supplir.resx">
+      <DependentUpon>frm_Supplir.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\frm_main\frmSettings.resx">
+      <DependentUpon>frmSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\frm_main\FrmTameLinx.resx">
+      <DependentUpon>FrmTameLinx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_report\frm_BillingSection.resx">
+      <DependentUpon>frm_BillingSection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\frm_main\Frm_Camera.resx">
+      <DependentUpon>Frm_Camera.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="test\frmSales.resx">
+      <DependentUpon>frmSales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="test\frm_imge.resx">
+      <DependentUpon>frm_imge.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\frm_main\frm_Main.resx">
+      <DependentUpon>frm_Main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\frm_main\Loading.resx">
+      <DependentUpon>Loading.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\frm_main\frmFullData.resx">
+      <DependentUpon>frmFullData.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order\frm_ReturnedSales.resx">
+      <DependentUpon>frm_ReturnedSales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\MonthlyProfits\frm_frm_Monthly_Profits.resx">
+      <DependentUpon>frm_frm_Monthly_Profits.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\MonthlyProfits\frm_MonthlyProfit.resx">
+      <DependentUpon>frm_MonthlyProfit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\MonthlyProfits\frm_Monthly_Returns_Sales.resx">
+      <DependentUpon>frm_Monthly_Returns_Sales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\MonthlyProfits\frm_Returns_Purchase.resx">
+      <DependentUpon>frm_Returns_Purchase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\MonthlyProfits\frm_Sales_Returns.resx">
+      <DependentUpon>frm_Sales_Returns.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\MonthlyProfits\MonthlySalesProfit.resx">
+      <DependentUpon>MonthlySalesProfit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="report\rp_Procurement.rdlc" />
+    <EmbeddedResource Include="report\rpt_Returnedpu.rdlc" />
+    <EmbeddedResource Include="frm\kah\Expanses.resx">
+      <DependentUpon>Expanses.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\kah\frmExpiration.resx">
+      <DependentUpon>frmExpiration.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\frm_main\frm_Welcom.resx">
+      <DependentUpon>frm_Welcom.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order\frm_Sales.resx">
+      <DependentUpon>frm_Sales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\frm_main\frm_Logen.resx">
+      <DependentUpon>frm_Logen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_report\report_WorkOrder.resx">
+      <DependentUpon>report_WorkOrder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\MonthlyProfits\frmProfits.resx">
+      <DependentUpon>frmProfits.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="test\XtraForm6.resx">
+      <DependentUpon>XtraForm6.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\frm_main\frm_AddUser.resx">
+      <DependentUpon>frm_AddUser.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="DS\dsProcurement.xsc">
+      <DependentUpon>dsProcurement.xsd</DependentUpon>
+    </None>
+    <None Include="DS\dsProcurement.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsProcurement.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DS\dsProcurement.xss">
+      <DependentUpon>dsProcurement.xsd</DependentUpon>
+    </None>
+    <None Include="DS\dsRuternrptProcurement.xsc">
+      <DependentUpon>dsRuternrptProcurement.xsd</DependentUpon>
+    </None>
+    <None Include="DS\dsRuternrptProcurement.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsRuternrptProcurement.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DS\dsRuternrptProcurement.xss">
+      <DependentUpon>dsRuternrptProcurement.xsd</DependentUpon>
+    </None>
+    <None Include="DS\dsRuternSales.xsc">
+      <DependentUpon>dsRuternSales.xsd</DependentUpon>
+    </None>
+    <None Include="DS\dsRuternSales.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsRuternSales.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DS\dsRuternSales.xss">
+      <DependentUpon>dsRuternSales.xsd</DependentUpon>
+    </None>
+    <None Include="DS\dsWorkOrder.xsc">
+      <DependentUpon>dsWorkOrder.xsd</DependentUpon>
+    </None>
+    <None Include="DS\dsWorkOrder.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsWorkOrder.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DS\dsWorkOrder.xss">
+      <DependentUpon>dsWorkOrder.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application4.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\83da7eec-338e-4152-8e25-bf190db99f62.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\99a42002-c907-47cd-bdf7-99fbdab63e95.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8cce8ee2-37f6-4a69-bd00-67f94831207b.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\59f71a0b-8f4a-4746-a18b-b8f6e5817588.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\374b076a-99a1-49cb-96a4-2c1db9f96724.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6714f446-8c5f-4aa2-9560-b2216ed8bfb9 %281%29.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6714f446-8c5f-4aa2-9560-b2216ed8bfb9.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bc968e9c-300f-4d1d-b725-77eef90805a8.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bfe57249-e7b2-4fef-a29c-c42dadcb593d.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ce205609-1f48-4384-b87f-da9e08096b6a.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eeca7e78-dd90-493b-a54f-1ae64180b5fe.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\322278877_821247718973237_3877896043016079321_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ontario-Automotive-Modernization-Program_Sharpening-your-competitive-edge-2048x1368.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transparent-cart-icon-online-shop-icon-60329202a59827.2944215016139269146783.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IncrementalInnovation.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-business-people-holding-dollar-bills-action-photography-chart-technology-finance-picture-image_1491471.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-city-earth-internet-data-blue-background-picture-image_930022.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-earth-sunrise-business-poster-background-picture-image_1055207.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-global-business-people-team-silhouettes-picture-image_1774323.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-internet-security-background-picture-image_466921.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\1 %2816%29.png" />
+    <Content Include="SqlServerTypes\Loader.cs" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\ملاك.jpg" />
+    <None Include="Resources\استلام-نقديه.png" />
+    <None Include="Resources\الاصناف-1.png" />
+    <None Include="Resources\العملاء.png" />
+    <None Include="Resources\الموظفين-1.png" />
+    <None Include="Resources\الموردين2.png" />
+    <None Include="Resources\حضور-وانصراف1.png" />
+    <None Include="Resources\بيان-اسعار-1.png" />
+    <None Include="Resources\خدمه العملاء.png" />
+    <None Include="Resources\دفع-نقديه.jpg" />
+    <None Include="Resources\مرتجع مشتريات.png" />
+    <None Include="Resources\فتوره-مشتريات1.png" />
+    <None Include="Resources\تخصصات_الهندسة_الميكانيكية.jpg" />
+    <None Include="Resources\13_Famous_Business_Leaders_You_Must_Follow_in_2022.jpg" />
+    <None Include="Resources\1028-2.jpg" />
+    <None Include="Resources\14117805.jpg" />
+    <Content Include="Resources\1420847041_shoping_32.png" />
+    <Content Include="Resources\1420847462_to_do_list_cheked_all.png" />
+    <Content Include="Resources\1420853324_Look.png" />
+    <None Include="Resources\522-2.jpg" />
+    <None Include="Resources\2023 hottest.jpg" />
+    <None Include="Resources\4841747.png" />
+    <None Include="Resources\48417471.png" />
+    <None Include="Resources\1_99yygXrRR8ix1wDOsdjLKA.gif" />
+    <Content Include="Resources\5.gif" />
+    <None Include="Resources\6678.png_860.png" />
+    <Content Include="Resources\711804-637274003765481175-16x9.png" />
+    <None Include="Resources\960x0 %281%29.jpg" />
+    <None Include="Resources\960x0.jpg" />
+    <None Include="Resources\960x01.jpg" />
+    <None Include="Resources\960x02.jpg" />
+    <None Include="Resources\861b3844485fa9292a8110005dce5d4a.jpg" />
+    <None Include="Resources\8ef980b2-33f6-40eb-ba78-fb6e92a200ec.jpg" />
+    <None Include="Resources\8ef980b2-33f6-40eb-ba78-fb6e92a200ec1.jpg" />
+    <Content Include="Resources\Admin-icon.png" />
+    <Content Include="Resources\administrator-icon.png" />
+    <Content Include="Resources\administrator-icon1.png" />
+    <Content Include="Resources\Apply_32x32.png" />
+    <Content Include="Resources\AssignToMe_32x32.png" />
+    <None Include="Resources\b9ee81d0ac3dd35a5bfa7af9011e66d8fdbde911.jpg" />
+    <None Include="Resources\bh-advisor-dribbble.gif" />
+    <Content Include="Resources\bundle-32x32x32b.png" />
+    <Content Include="Resources\bundle-32x32x32b1.png" />
+    <Content Include="Resources\bundle-48x48x32b.png" />
+    <Content Include="Resources\bundle-48x48x32b1.png" />
+    <Content Include="Resources\bundle-48x48x32b2.png" />
+    <None Include="Resources\business-development-data.jpg" />
+    <None Include="Resources\business_världen_54072622 %281%29.jpg" />
+    <None Include="Resources\business_världen_54072622.jpg" />
+    <None Include="Resources\business-development-data1.jpg" />
+    <None Include="Resources\business-intelligence.png" />
+    <None Include="Resources\Competitive-Advantage.jpg" />
+    <None Include="Resources\db6627f766186e082546671e00e5f0ab.jpg" />
+    <None Include="Resources\business_världen_540726221.jpg" />
+    <None Include="Resources\business_application_addmale_useradd_insert_add_user_client_2312.png" />
+    <None Include="Resources\business_application_addmale_useradd_insert_add_user_client_23121.png" />
+    <None Include="Resources\Capture.PNG" />
+    <None Include="Resources\Capture1.PNG" />
+    <Content Include="Resources\delete-32.png" />
+    <Content Include="Resources\delete-property-32.png" />
+    <Content Include="Resources\download %281%29.png" />
+    <Content Include="Resources\edit-11-32.png" />
+    <Content Include="Resources\edit-11-321.png" />
+    <None Include="Resources\Engineering-Solutions.jpg" />
+    <Content Include="Resources\excel-3-32.png" />
+    <Content Include="Resources\excel-3-321.png" />
+    <Content Include="Resources\exit-2-32.png" />
+    <Content Include="Resources\exit-2-321.png" />
+    <Content Include="Resources\exit-2-322.png" />
+    <Content Include="Resources\exit-2-32_blue.png" />
+    <Content Include="Resources\Find_32x32.png" />
+    <Content Include="Resources\flat_seo-30-512.png" />
+    <Content Include="Resources\folder.png" />
+    <Content Include="Resources\folder_48.png" />
+    <None Include="Resources\G0B8tUMTQIOpBkg3tBeK_ThinkstockPhotos-174284055.jpg" />
+    <None Include="Resources\global-business.jpg" />
+    <None Include="Resources\giphy1.gif" />
+    <Content Include="Resources\icons8_add_32px.png" />
+    <Content Include="Resources\icons8_category_32px.png" />
+    <Content Include="Resources\icons8_delete_32px.png" />
+    <Content Include="Resources\icons8_edit_property_32px.png" />
+    <Content Include="Resources\icons8_estimate_32px.png" />
+    <Content Include="Resources\icons8_eye_32px.png" />
+    <Content Include="Resources\icons8_save_32px_1.png" />
+    <Content Include="Resources\images %2816%29.png" />
+    <Content Include="Resources\lorrygreen.png" />
+    <Content Include="Resources\lorrygreen1.png" />
+    <Content Include="Resources\microsoft-word-32.png" />
+    <Content Include="Resources\microsoft-word-321.png" />
+    <None Include="Resources\Ontario-Automotive-Modernization-Program_Sharpening-your-competitive-edge-2048x13681.jpg" />
+    <Content Include="Resources\open-in-browser-32.png" />
+    <Content Include="Resources\open-in-browser-321.png" />
+    <None Include="Resources\other-biz-growth.jpg" />
+    <Content Include="Resources\pic.png" />
+    <Content Include="Resources\plus-4-32.png" />
+    <Content Include="Resources\plus-5-32.png" />
+    <Content Include="Resources\plus-6-24.png" />
+    <None Include="Resources\pngtree-man-in-business-suit-as-user-icon-isolated-png-image_1999567.jpg" />
+    <None Include="Resources\pngtree-no-cellphone-forbidden-sign-png-image_1722095.jpg" />
+    <None Include="Resources\pngtree-no-cellphone-forbidden-sign-png-image_17220951.jpg" />
+    <Content Include="Resources\printer-32.png" />
+    <Content Include="Resources\printer-321.png" />
+    <Content Include="Resources\product-icon.png" />
+    <None Include="Resources\SaaS-Business-Growth.jpg" />
+    <None Include="Resources\R.gif" />
+    <None Include="Resources\R1.gif" />
+    <None Include="Resources\R1.png" />
+    <None Include="Resources\R %281%29.png" />
+    <Content Include="Resources\Sales-by-payment-method-icon.png" />
+    <Content Include="Resources\Sales-by-payment-method-icon1.png" />
+    <Content Include="Resources\SalesPeriodMonth_32x32.png" />
+    <Content Include="Resources\save-32.png" />
+    <Content Include="Resources\save-321.png" />
+    <Content Include="Resources\save-322.png" />
+    <Content Include="Resources\save-32_blue.png" />
+    <None Include="Resources\Screenshot %2815%29.png" />
+    <Content Include="Resources\search-6-32.png" />
+    <Content Include="Resources\Settings-5-icon.png" />
+    <Content Include="Resources\Settings-5-icon1.png" />
+    <Content Include="Resources\shop-cart-icon.png" />
+    <Content Include="Resources\shop-cart-icon1.png" />
+    <None Include="Resources\transformation-of-industries-in-2023 %281%29.jpg" />
+    <None Include="Resources\transformation-of-industries-in-2023.jpg" />
+    <Content Include="Resources\Turbo32o80.png" />
+    <Content Include="Resources\users_two_48.png" />
+    <Content Include="Resources\users_two_481.png" />
+    <Content Include="Resources\users_two_482.png" />
+    <Content Include="Resources\webcam-2-32.png" />
+    <Content Include="Resources\webcam-48.png" />
+    <None Include="Resources\What-is-systems-engineering-cover-art-01-1024x386.jpg" />
+    <None Include="Resources\what-is-the-difference-between-a-bba-in-accounting-and-a-bs-in-accounting-1024x683-1-780x470.jpg" />
+    <Content Include="Resources\x-mark-3-32.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

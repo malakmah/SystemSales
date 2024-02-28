@@ -1,0 +1,57 @@
+﻿Imports System.Data.SqlClient
+Imports DevExpress.XtraEditors
+
+Public Class frm_
+    Dim CMD As New SqlCommand
+    Dim da As New SqlDataAdapter
+    Private Sub SimpleButton3_Click(sender As Object, e As EventArgs) Handles SimpleButton3.Click
+        Me.Close()
+    End Sub
+    Sub logEmployee()
+        Dim dt = New DataTable
+        da = New SqlDataAdapter("select ID, Name from Tbl_Employee", DB.conn)
+        da.Fill(dt)
+        If dt.Rows.Count > 0 Then
+            Dim dr As DataRow = dt.NewRow()
+            dr("Name") = "--Select--"
+            dr("ID") = "0"
+            dt.Rows.InsertAt(dr, 0)
+            TXTName.DataSource = Nothing
+            Me.TXTName.DataSource = dt
+            Me.TXTName.DisplayMember = "Name"
+            Me.TXTName.ValueMember = "ID"
+            'omUserName.Properties.Items.Add(dt)
+        End If
+    End Sub
+
+
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+
+    End Sub
+
+    Private Sub frm__Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        logEmployee()
+        Me.TXT_date.Text = DateTime.Now.ToString("yyyy-MM-dd")
+        Me.txt_Hour.Text = DateTime.Now.ToString("HH:mm:ss")
+    End Sub
+
+    Private Sub SimpleButton5_Click(sender As Object, e As EventArgs) Handles SimpleButton5.Click
+        Try
+            DB.Open()
+            CMD = New SqlCommand("SQL_ADD_AttendingAndLeaving", DB.conn)
+            CMD.CommandType = CommandType.StoredProcedure
+            CMD.Parameters.AddWithValue("@Name", TXTName.Text)
+            CMD.Parameters.AddWithValue("@Presence_Departure", txt_Presence_Departure.Text)
+            CMD.Parameters.AddWithValue("@Condition", txt_Condition.Text)
+            CMD.Parameters.AddWithValue("@Hour", txt_Hour.Text)
+            CMD.Parameters.AddWithValue("@Date", TXT_Date.Text)
+            CMD.ExecuteNonQuery()
+            DB.Close()
+            XtraMessageBox.Show("Add successfully")
+            Me.TXT_date.Text = DateTime.Now.ToString("yyyy-MM-dd")
+            Me.txt_Hour.Text = DateTime.Now.ToString("HH:mm:ss")
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Sub
+End Class

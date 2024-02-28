@@ -1,0 +1,382 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="960x0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\960x0.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pngtree-internet-security-background-picture-image_466921" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pngtree-internet-security-background-picture-image_466921.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="8ef980b2-33f6-40eb-ba78-fb6e92a200ec1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\8ef980b2-33f6-40eb-ba78-fb6e92a200ec1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4841747" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4841747.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="business_application_addmale_useradd_insert_add_user_client_23121" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\business_application_addmale_useradd_insert_add_user_client_23121.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="59f71a0b-8f4a-4746-a18b-b8f6e5817588" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\59f71a0b-8f4a-4746-a18b-b8f6e5817588.jfif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ontario-Automotive-Modernization-Program_Sharpening-your-competitive-edge-2048x13681" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ontario-Automotive-Modernization-Program_Sharpening-your-competitive-edge-2048x13681.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="48417471" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\48417471.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="14117805" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\14117805.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="8ef980b2-33f6-40eb-ba78-fb6e92a200ec" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\8ef980b2-33f6-40eb-ba78-fb6e92a200ec.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="other-biz-growth" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\other-biz-growth.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="تخصصات_الهندسة_الميكانيكية" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\تخصصات_الهندسة_الميكانيكية.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pngtree-man-in-business-suit-as-user-icon-isolated-png-image_1999567" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pngtree-man-in-business-suit-as-user-icon-isolated-png-image_1999567.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="R3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\R1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flat_seo-30-5122" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\flat_seo-30-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="giphy1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\giphy1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flat_seo-30-512" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\flat_seo-30-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="99a42002-c907-47cd-bdf7-99fbdab63e95" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\99a42002-c907-47cd-bdf7-99fbdab63e95.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="الموظفين-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\الموظفين-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bc968e9c-300f-4d1d-b725-77eef90805a8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bc968e9c-300f-4d1d-b725-77eef90805a8.jfif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eeca7e78-dd90-493b-a54f-1ae64180b5fe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eeca7e78-dd90-493b-a54f-1ae64180b5fe.jfif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="استلام-نقديه" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\استلام-نقديه.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="522-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\522-2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="db6627f766186e082546671e00e5f0ab" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\db6627f766186e082546671e00e5f0ab.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="فتوره-مشتريات1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\فتوره-مشتريات1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="R (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\R (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="business_världen_540726221" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\business_världen_540726221.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="960x0 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\960x0 (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="83da7eec-338e-4152-8e25-bf190db99f62" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\83da7eec-338e-4152-8e25-bf190db99f62.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pngtree-business-people-holding-dollar-bills-action-photography-chart-technology-finance-picture-image_1491471" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pngtree-business-people-holding-dollar-bills-action-photography-chart-technology-finance-picture-image_1491471.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="6678.png_860" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\6678.png_860.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="العملاء" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\العملاء.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="R2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\R1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="الموردين2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\الموردين2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bfe57249-e7b2-4fef-a29c-c42dadcb593d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bfe57249-e7b2-4fef-a29c-c42dadcb593d.jfif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="الاصناف-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\الاصناف-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="374b076a-99a1-49cb-96a4-2c1db9f96724" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\374b076a-99a1-49cb-96a4-2c1db9f96724.jfif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pngtree-no-cellphone-forbidden-sign-png-image_1722095" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pngtree-no-cellphone-forbidden-sign-png-image_1722095.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="دفع-نقديه" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\دفع-نقديه.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="6714f446-8c5f-4aa2-9560-b2216ed8bfb9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\6714f446-8c5f-4aa2-9560-b2216ed8bfb9.jfif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Screenshot (15)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screenshot (15).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="حضور-وانصراف1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\حضور-وانصراف1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Capture1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Capture1.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="960x01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\960x01.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ontario-Automotive-Modernization-Program_Sharpening-your-competitive-edge-2048x1368" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ontario-Automotive-Modernization-Program_Sharpening-your-competitive-edge-2048x1368.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="6714f446-8c5f-4aa2-9560-b2216ed8bfb9 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\6714f446-8c5f-4aa2-9560-b2216ed8bfb9 (1).jfif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="business_världen_54072622 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\business_världen_54072622 (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="مرتجع مشتريات" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\مرتجع مشتريات.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ce205609-1f48-4384-b87f-da9e08096b6a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ce205609-1f48-4384-b87f-da9e08096b6a.jfif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pngtree-global-business-people-team-silhouettes-picture-image_1774323" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pngtree-global-business-people-team-silhouettes-picture-image_1774323.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="بيان-اسعار-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\بيان-اسعار-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="business_världen_54072622" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\business_världen_54072622.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IncrementalInnovation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IncrementalInnovation.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="960x02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\960x02.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="8cce8ee2-37f6-4a69-bd00-67f94831207b" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\8cce8ee2-37f6-4a69-bd00-67f94831207b.jfif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="322278877_821247718973237_3877896043016079321_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\322278877_821247718973237_3877896043016079321_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="b9ee81d0ac3dd35a5bfa7af9011e66d8fdbde911" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\b9ee81d0ac3dd35a5bfa7af9011e66d8fdbde911.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Capture" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Capture.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Competitive-Advantage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Competitive-Advantage.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pngtree-city-earth-internet-data-blue-background-picture-image_930022" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pngtree-city-earth-internet-data-blue-background-picture-image_930022.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1_99yygXrRR8ix1wDOsdjLKA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1_99yygXrRR8ix1wDOsdjLKA.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="13_Famous_Business_Leaders_You_Must_Follow_in_2022" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\13_Famous_Business_Leaders_You_Must_Follow_in_2022.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SaaS-Business-Growth" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SaaS-Business-Growth.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flat_seo-30-5121" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\flat_seo-30-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="transparent-cart-icon-online-shop-icon-60329202a59827.2944215016139269146783" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\transparent-cart-icon-online-shop-icon-60329202a59827.2944215016139269146783.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1028-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1028-2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="transformation-of-industries-in-2023 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\transformation-of-industries-in-2023 (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="what-is-the-difference-between-a-bba-in-accounting-and-a-bs-in-accounting-1024x683-1-780x470" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\what-is-the-difference-between-a-bba-in-accounting-and-a-bs-in-accounting-1024x683-1-780x470.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="861b3844485fa9292a8110005dce5d4a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\861b3844485fa9292a8110005dce5d4a.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="business-intelligence" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\business-intelligence.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="business-development-data1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\business-development-data1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="R1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\R.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ملاك" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ملاك.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bh-advisor-dribbble" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bh-advisor-dribbble.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="business-development-data" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\business-development-data.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="What-is-systems-engineering-cover-art-01-1024x386" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\What-is-systems-engineering-cover-art-01-1024x386.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="transformation-of-industries-in-2023" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\transformation-of-industries-in-2023.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="business_application_addmale_useradd_insert_add_user_client_2312" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\business_application_addmale_useradd_insert_add_user_client_2312.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="خدمه العملاء" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\خدمه العملاء.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="G0B8tUMTQIOpBkg3tBeK_ThinkstockPhotos-174284055" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\G0B8tUMTQIOpBkg3tBeK_ThinkstockPhotos-174284055.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Engineering-Solutions" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Engineering-Solutions.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2023 hottest" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2023 hottest.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pngtree-earth-sunrise-business-poster-background-picture-image_1055207" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pngtree-earth-sunrise-business-poster-background-picture-image_1055207.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="global-business" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\global-business.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="R" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pngtree-no-cellphone-forbidden-sign-png-image_17220951" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pngtree-no-cellphone-forbidden-sign-png-image_17220951.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>
